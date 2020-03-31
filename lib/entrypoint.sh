@@ -50,6 +50,7 @@ validate_list_attr() {
 
 run_bucardo_command() {
   local comm=$1
+  echo $comm
   su - postgres -c "bucardo $comm"
 }
 
